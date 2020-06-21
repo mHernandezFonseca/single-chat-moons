@@ -26,9 +26,12 @@ Typing your name to identify in the text box and enjoy!
 Use the logout button, on the left, to go out the chat.
 
 ### Check in the database users with log in and log out
-Open a new tab of your internet explorer and put the next link
+Open a new tab of your internet explorer and put the next link:
 http://localhost:8085/h2-console/
-Click on connect button, on the area SQL statement typing the query:
+Click on connect button.
+If you have an error to connect at the database put this on the url database:
+jdbc:h2:mem:testdb
+Click again on connect button, on the area SQL statement typing the query:
 select * from user;
 Click on run button to show the records of users that have a login and logout,
-the data on the table are ID, CREATED_DATE, LOGGER_TYPE and NAME_USER 
+the data on the table are ID, CREATED_DATE, LOGGER_TYPE and NAME_USER
